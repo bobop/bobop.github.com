@@ -1,10 +1,7 @@
 ---
 layout: post
 title: Routes to the Future - Innovation Challenge
-date: 2013-03-24 00:00:00
 ---
-
-#{{ page.title }} <small>{{ page.date | date_to_string }}</small>
 
 I'm writing this in the last hour of the [Innovation Challenge](http://futureeverything.org/summit/conference/workshops-fringe-events/innovation-challenge/) staged by Future Everything and TFGM. I've been here at 4 Piccadilly Place for 31 hours and managed to get a few hours kip at around 3am!
 

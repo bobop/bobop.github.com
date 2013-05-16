@@ -2,9 +2,18 @@
 layout: default
 ---
 
+<div class="container turquoise" itemscope itemtype="http://schema.org/Person">
+  <div class="container-narrow">
+    <h3>
+      <span itemprop="name">Ben Gibbs</span>
+      <small><span itemprop="jobTitle">Freelance Ruby on Rails developer</span> based in Manchester</small>
+    </h3>
+  </div>
+</div>
+
 <div class="container-narrow">
 
-  <hr>
+  <h1>{{ page.title }} <small>{{ page.date | date_to_string }}</small></h1>
 
   {{ content }}
 

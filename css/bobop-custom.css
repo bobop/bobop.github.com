@@ -37,9 +37,10 @@ body {
 .container.turquoise {
   background: #9FDAD4;
   width: 100%;
+  margin-bottom: 10px;
 }
 
-.turquoise h1, .turquoise .lead {
+.turquoise h1, .turquoise .lead, .turquoise h3 {
   color: #fff;
   font-weight: 200;
 }

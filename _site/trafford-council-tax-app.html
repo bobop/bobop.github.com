@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Trafford Council Tax App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
+    <link href="/css/bobop-custom.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="container-narrow">
+
+      <div class="masthead">
+        <ul class="nav pull-right">
+          <li><a href="#" class="btn btn-danger btn-large">Contact Me</a></li>
+        </ul>
+        <h3 class="muted"><a href="/"><img src="/img/bobop_logo.jpg" width="200"></a></h3>
+      </div>
+
+    </div>
+
+    <div class="container turquoise" itemscope itemtype="http://schema.org/Person">
+  <div class="container-narrow">
+    <h3>
+      <span itemprop="name">Ben Gibbs</span>
+      <small><span itemprop="jobTitle">Freelance Ruby on Rails developer</span> based in Manchester</small>
+    </h3>
+  </div>
+</div>
+
+<div class="container-narrow">
+
+  <h1>Trafford Council Tax App <small>19 Nov 2010</small></h1>
+
+  <p>I've been developing a few websites based on the Open Data from Trafford Council including the <a href="http://traffordopendata.heroku.com/">Trafford Open Data Maps</a> site and the <a href="http://traffordspending.heroku.com/">Trafford Supplier Spend</a> site.</p>
+
+<p>They then released the data of the <a href="http://www.trafford.gov.uk/opendata/">Council Tax bands</a> each of the 90,000+ properties in Trafford and I had to map that, it's such juicy data!</p>
+
+<p><a href="http://traffordcounciltax.heroku.com/">Trafford Council Tax</a></p>
+
+<p><img src="http://s3.amazonaws.com/bobob_prod/medium/5/tct.jpg?1320612664" title="traffordcounciltax" alt="" /></p>
+
+<p>When I heard that this data was released, my immediate thought was that I's want to check the tax bands of the houses on my street if I lived in Trafford. So I created a way to search for your street and then to see the colour coded markers for the houses on your street, which would produce something like this: <a href="http://j.mp/9pEZBo">http://j.mp/9pEZBo</a></p>
+
+<p>Trafford Council also released the historical data on the tax band charges since 1993 so I used the <a href="http://code.google.com/apis/visualization/interactive_charts.html">Google Visualisation</a> tool to create an interactive barchart showing how the charges have risen over the year. <a href="http://traffordcounciltax.heroku.com/taxbands">See the interactive bar chart here</a>.</p>
+
+<p>As with my other Open Data apps, I deployed the app to Heroku which offers free and easy hosting for small Ruby On Rails apps.</p>
+
+<p>I have been surprised that the <a href="http://traffordopendata.heroku.com/trees">Tree Map</a> has got the most attention even though this Council Tax app is more controversial. Maybe it's because people don't know I've done this yet. Well, at least you do now!</p>
+
+
+</div>
+
+
+
+    <div class="container-narrow">
+
+      <hr>
+
+      <div class="footer">
+        <p>&copy; bobop 2013</p>
+      </div>
+
+    </div>
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+  </body>
+</html>

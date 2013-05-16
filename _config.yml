@@ -3,3 +3,5 @@ server: true
 markdown: rdiscount
 lsi: false
 pygments: true
+permalink: none
+paginate: 5
