@@ -88,7 +88,7 @@ p { font-family: "Open Sans"; font-weight: 400; font-size: 16px; font-size: 1rem
 p.lead { font-size: 20px; font-size: 1.25rem; margin-bottom: 18px; }
 @media only screen and (max-width: 768px) { p { font-size: 17.6px; font-size: 1.1rem; line-height: 1.625em; } }
 
-a { color: #d04526; text-decoration: none; outline: 0; line-height: inherit; }
+a { color: #9FDAD4; text-decoration: none; outline: 0; line-height: inherit; }
 a:hover { color: #c03d20; }
 
 /*=====================================================
@@ -159,7 +159,7 @@ abbr { text-transform: none; }
  ==================================================*/
 /*.container { padding: 0px $gutter-in-px;
 }*/
-.row { width: 100%; max-width: 940px; min-width: 320px; margin: 0 auto; }
+.row { width: 100%; max-width: 700px; min-width: 320px; margin: 0 auto; }
 @media only screen and (max-width: 960px) { .row { padding: 0 20px; } }
 .row .row { min-width: 0px; }
 @media only screen and (max-width: 960px) { .row .row { padding: 0; } }

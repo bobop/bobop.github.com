@@ -2,3 +2,46 @@
 We highly recommend you use SASS and write your custom styles in sass/_custom.scss.
 However, this blank file is available if you prefer
 */
+
+.align-right {
+  text-align: right;
+}
+
+.turquoise {
+  background: #9FDAD4;
+  width: 100%;
+  margin-bottom: 10px;
+}
+.turquoise h1, .turquoise .lead, .turquoise h3, .turquoise small {
+  color: white;
+  font-weight: 300;
+}
+
+.jumbotron {
+  text-align: center;
+}
+.jumbotron .jumbo {
+  margin-bottom: 1em;
+}
+
+.disabled {
+   pointer-events: none;
+   cursor: default;
+}
+
+.social {
+  margin-bottom: 1em;
+}
+
+.address {
+  background: #e9e9e9;
+  border: 1px solid #c9c9c9;
+  margin-bottom: 1em;
+  padding: 0.5em;
+}
+.address p {
+  margin-bottom: 0px;
+}
+.address a {
+  color: #555;
+}

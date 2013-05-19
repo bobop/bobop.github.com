@@ -8,8 +8,8 @@
     <!-- <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
     <link href="/css/bobop-custom.css" rel="stylesheet" media="screen"> -->
-    <link rel="stylesheet" href="css/gumby.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/gumby.css">
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <div class="row">
@@ -18,10 +18,8 @@
           <div class="eight columns">
             <h3 class="muted"><a href="/"><img src="/img/bobop_logo.jpg" width="200"></a></h3>
           </div>
-          <div class="four columns">
-            <ul class="nav pull-right">
-              <li><a href="#" class="btn btn-danger btn-large">Contact Me</a></li>
-            </ul>
+          <div class="four columns align-right">
+              <div class="btn info large"><a href="/contact.html">Contact Me</a></div>
           </div>
         </div>
       </div>
@@ -29,14 +27,14 @@
 
     {{ content }}
 
-    <div class="container-narrow">
+    <div class="row">
+      <div class="twelve columns">
+        <hr>
 
-      <hr>
-
-      <div class="footer">
-        <p>&copy; bobop {{ site.time | date: "%Y" }}</p>
+        <div class="footer">
+          <p>&copy; bobop {{ site.time | date: "%Y" }}</p>
+        </div>
       </div>
-
     </div>
 
     <script src="http://code.jquery.com/jquery.js"></script>

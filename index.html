@@ -9,7 +9,7 @@ title: Blog
       <div class="jumbotron">
         <h1>I'm <span itemprop="name">Ben Gibbs</span></h1>
         <p class="lead"><span itemprop="jobTitle">Freelance Ruby on Rails developer</span> based in Manchester</p>
-        <div class="medium primary btn"><a href="#">Available for Hire</a></div>
+        <div class="medium primary btn jumbo"><a href="/contact.html">Available for Hire</a></div>
       </div>
     </div>
   </div>
@@ -32,40 +32,36 @@ title: Blog
 
   <!-- Pagination links -->
   <div class="pagination">
-    <ul>
-      {% if paginator.previous_page %}
-        <li>
-          {% if paginator.previous_page == 1 %}
-            <a href="/">Previous</a>
-          {% else %}
-            <a href="/{{ paginator.previous_page_path }}" class="previous">Previous</a>
-          {% endif %}
-        </li>
+    {% if paginator.previous_page %}
+      {% if paginator.previous_page == 1 %}
+        <div class="small btn pill-left default"><a href="/">Previous</a></div>
       {% else %}
-        <li class="disabled"><span>Previous</span></li>
+        <div class="small btn pill-left default"><a href="/{{ paginator.previous_page_path }}">Previous</a></div>
       {% endif %}
-      <!-- <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span> -->
-      
-      {% if paginator.page == 1 %}
-        <li class="active"><span>1</span></li>
-      {% else %}
-        <li><a href="/">1</a></li>
-      {% endif %}
+    {% else %}
+      <div class="small btn pill-left default disabled"><a href="#">Previous</a></div>
+    {% endif %}
+    <!-- <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span> -->
+    
+    {% if paginator.page == 1 %}
+      <div class="small btn squared info"><a href="#">1</a></div>
+    {% else %}
+      <div class="small btn squared default"><a href="/">1</a></div>
+    {% endif %}
 
-      {% for count in (2..paginator.total_pages) %}
-        {% if count == paginator.page %}
-          <li class="active"><span>{{ count }}</span></li>
-        {% else %}
-          <li><a href="/page{{ count }}">{{ count }}</a></li>
-        {% endif %}
-      {% endfor %}
-
-      {% if paginator.next_page %}
-        <li><a href="/page{{ paginator.next_page }}" class="next">Next</a></li>
+    {% for count in (2..paginator.total_pages) %}
+      {% if count == paginator.page %}
+        <div class="small btn squared active info"><a href="#">{{ count }}</a></div>
       {% else %}
-        <li class="disabled"><span>Next</span></li>
+        <div class="small btn squared default"><a href="/page{{ count }}">{{ count }}</a></div>
       {% endif %}
-    </ul>
+    {% endfor %}
+
+    {% if paginator.next_page %}
+      <div class="small btn pill-right default"><a href="/page{{ paginator.next_page }}">Next</a></div>
+    {% else %}
+      <div class="small btn pill-right disabled default"><a href="#">Next</a></div>
+    {% endif %}
   </div>
 
 </div>

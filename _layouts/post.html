@@ -2,22 +2,24 @@
 layout: default
 ---
 
-<div class="container turquoise" itemscope itemtype="http://schema.org/Person">
-  <div class="container-narrow">
-    <h3>
-      <span itemprop="name">Ben Gibbs</span>
-      <small><span itemprop="jobTitle">Freelance Ruby on Rails developer</span> based in Manchester</small>
-    </h3>
+<div class="turquoise" itemscope itemtype="http://schema.org/Person">
+  <div class="row">
+    <div class="twelve columns">
+      <h3>
+        <span itemprop="name">Ben Gibbs</span>
+        <small><span itemprop="jobTitle">Freelance Ruby on Rails developer</span> based in Manchester</small>
+      </h3>
+    </div>
   </div>
 </div>
 
-<div class="container-narrow" itemscope itemtype="http://schema.org/BlogPosting">
+<div class="row" itemscope itemtype="http://schema.org/BlogPosting">
+  <div class="twelve columns">
+    <h1><span itemprop="name">{{ page.title }}</span> <small><span itemprop="datePublished">{{ page.date | date_to_string }}</span></small></h1>
 
-  <h1><span itemprop="name">{{ page.title }}</span> <small><span itemprop="datePublished">{{ page.date | date_to_string }}</span></small></h1>
-
-  <div itemprop="articleBody">
-    {{ content }}
+    <div itemprop="articleBody">
+      {{ content }}
+    </div>
   </div>
-
 </div>
 
