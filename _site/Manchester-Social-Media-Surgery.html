@@ -10,6 +10,7 @@
     <link href="/css/bobop-custom.css" rel="stylesheet" media="screen"> -->
     <link rel="stylesheet" href="/css/gumby.css">
     <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/libs/modernizr-2.6.2.min.js"></script>
   </head>
   <body>
     <div class="row">
@@ -19,7 +20,7 @@
             <h3 class="muted"><a href="/"><img src="/img/bobop_logo.jpg" width="200"></a></h3>
           </div>
           <div class="four columns align-right">
-              <div class="btn info large"><a href="/contact.html">Contact Me</a></div>
+              <div class="btn danger large"><a href="/contact.html">Contact Me</a></div>
           </div>
         </div>
       </div>
@@ -67,7 +68,36 @@
       </div>
     </div>
 
-    <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
+    <!-- Grab Google CDN's jQuery, fall back to local if offline -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/js/libs/jquery-1.9.1.min.js"><\/script>')</script>
+
+    <!--
+    Include gumby.js followed by UI modules.
+    Or concatenate and minify into a single file
+    <script src="js/libs/gumby.js"></script>
+    <script src="js/libs/ui/gumby.retina.js"></script>
+    <script src="js/libs/ui/gumby.fixed.js"></script>
+    <script src="js/libs/ui/gumby.skiplink.js"></script>
+    <script src="js/libs/ui/gumby.toggleswitch.js"></script>
+    <script src="js/libs/ui/gumby.checkbox.js"></script>
+    <script src="js/libs/ui/gumby.radiobtn.js"></script>
+    <script src="js/libs/ui/gumby.tabs.js"></script>
+    <script src="js/libs/ui/gumby.navbar.js"></script>
+    <script src="js/libs/ui/jquery.validation.js"></script>
+    <script src="js/libs/gumby.init.js"></script>-->
+    
+    <script src="/js/libs/gumby.min.js"></script>
+    <script src="/js/plugins.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/libs/ui/gumby.toggleswitch.js"></script>
+
+    <!-- Change UA-XXXXX-X to be your site's ID -->
+    <!--<script>
+      window._gaq = [['_setAccount','UAXXXXXXXX1'],['_trackPageview'],['_trackPageLoadTime']];
+      Modernizr.load({
+        load: ('https:' == location.protocol ? '//ssl' : '//www') + '.google-analytics.com/ga.js'
+      });
+    </script>-->
   </body>
 </html>

@@ -16,52 +16,105 @@ title: Blog
 </div>
 
 <div class="row">
-
-  <h2>PICTURES / LOGOS</h2>
-
-  <h2>{{ page.title }}</h2>
-
-  {% for post in paginator.posts %}
-
-      <p>
-        <a href="{{ post.url }}">{{ post.title }}</a>
-        {{ post.date | date: "%B %e, %Y" }}
-      </p>
-
-  {% endfor %}
-
-  <!-- Pagination links -->
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      {% if paginator.previous_page == 1 %}
-        <div class="small btn pill-left default"><a href="/">Previous</a></div>
-      {% else %}
-        <div class="small btn pill-left default"><a href="/{{ paginator.previous_page_path }}">Previous</a></div>
-      {% endif %}
-    {% else %}
-      <div class="small btn pill-left default disabled"><a href="#">Previous</a></div>
-    {% endif %}
-    <!-- <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span> -->
-    
-    {% if paginator.page == 1 %}
-      <div class="small btn squared info"><a href="#">1</a></div>
-    {% else %}
-      <div class="small btn squared default"><a href="/">1</a></div>
-    {% endif %}
-
-    {% for count in (2..paginator.total_pages) %}
-      {% if count == paginator.page %}
-        <div class="small btn squared active info"><a href="#">{{ count }}</a></div>
-      {% else %}
-        <div class="small btn squared default"><a href="/page{{ count }}">{{ count }}</a></div>
-      {% endif %}
-    {% endfor %}
-
-    {% if paginator.next_page %}
-      <div class="small btn pill-right default"><a href="/page{{ paginator.next_page }}">Next</a></div>
-    {% else %}
-      <div class="small btn pill-right disabled default"><a href="#">Next</a></div>
-    {% endif %}
+  <h2>Clients</h2>
+  <div class="row grey-pics">
+    <div class="three columns image align-center">
+      <img class="grayscale" src="/img/Hovis-logo.png"/>
+    </div>
+    <div class="three columns image align-center">
+      <img class="grayscale" src="/img/TDB.png"/>
+    </div>
+    <div class="three columns image align-center">
+      <img class="grayscale" src="/img/gli.png"/>
+    </div>
+    <div class="three columns image align-center">
+      <img class="grayscale" src="/img/c8online.jpeg"/>
+    </div>
   </div>
+  <div class="row grey-pics">
+    <div class="three columns image align-center">
+      <img class="grayscale" src="/img/www.planmypension.co.png"/>
+    </div>
+    <div class="three columns image align-center">
+      <img class="grayscale" src="/img/buddybuy.png"/>
+    </div>
+    <div class="three columns image align-center">
+      <img class="grayscale" src="/img/businessgrowthhub.png"/>
+    </div>
+    <div class="three columns image align-center">
+      <img class="grayscale" src="/img/mughli.png"/>
+    </div>
+  </div>
+
+  <h2>Originals</h2>
+  <div class="row grey-pics">
+    <div class="four columns image align-center">
+      <img class="grayscale" src="/img/borrownote.png"/>
+    </div>
+    <div class="four columns image align-center">
+      <img class="grayscale" src="/img/giftaidr_logo.png"/>
+    </div>
+    <div class="two columns image align-center">
+      <img class="grayscale" src="/img/glidely_logo_sq.png"/>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="eight columns">
+
+      <h2>{{ page.title }}</h2>
+
+      {% for post in paginator.posts %}
+
+          <p class="light-grey">
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            {{ post.date | date: "%B %e, %Y" }}
+          </p>
+
+      {% endfor %}
+
+      <!-- Pagination links -->
+      <div class="pagination">
+        {% if paginator.previous_page %}
+          {% if paginator.previous_page == 1 %}
+            <div class="small btn pill-left default"><a href="/">Previous</a></div>
+          {% else %}
+            <div class="small btn pill-left default"><a href="/{{ paginator.previous_page_path }}">Previous</a></div>
+          {% endif %}
+        {% else %}
+          <div class="small btn pill-left default disabled"><a href="#">Previous</a></div>
+        {% endif %}
+        <!-- <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span> -->
+        
+        {% if paginator.page == 1 %}
+          <div class="small btn squared info"><a href="#">1</a></div>
+        {% else %}
+          <div class="small btn squared default"><a href="/">1</a></div>
+        {% endif %}
+
+        {% for count in (2..paginator.total_pages) %}
+          {% if count == paginator.page %}
+            <div class="small btn squared active info"><a href="#">{{ count }}</a></div>
+          {% else %}
+            <div class="small btn squared default"><a href="/page{{ count }}">{{ count }}</a></div>
+          {% endif %}
+        {% endfor %}
+
+        {% if paginator.next_page %}
+          <div class="small btn pill-right default"><a href="/page{{ paginator.next_page }}">Next</a></div>
+        {% else %}
+          <div class="small btn pill-right disabled default"><a href="#">Next</a></div>
+        {% endif %}
+      </div>
+    </div>
+
+    <div class="four columns align-right">
+      <h2>Social</h2>
+      <div class="social medium info btn icon-left entypo icon-twitter"><a href="https://twitter.com/bobop">@bobop</a></div><br />
+      <div class="social medium info btn icon-left entypo icon-facebook-squared"><a href="https://www.facebook.com/boboppage">Facebook</a></div><br />
+      <div class="social medium info btn icon-left entypo icon-linkedin"><a href="http://uk.linkedin.com/in/benjgibbs">LinkedIn</a></div><br />
+      <div class="social medium info btn icon-left entypo icon-github"><a href="http://github.com/bobop">Github</a></div><br />
+      <div class="social medium info btn icon-left entypo icon-gplus"><a href="https://plus.google.com/111410012808185125992/posts">Google+</a></div>
+    </div>
 
 </div>

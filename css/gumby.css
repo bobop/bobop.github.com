@@ -88,7 +88,7 @@ p { font-family: "Open Sans"; font-weight: 400; font-size: 16px; font-size: 1rem
 p.lead { font-size: 20px; font-size: 1.25rem; margin-bottom: 18px; }
 @media only screen and (max-width: 768px) { p { font-size: 17.6px; font-size: 1.1rem; line-height: 1.625em; } }
 
-a { color: #9FDAD4; text-decoration: none; outline: 0; line-height: inherit; }
+a { color: #729D99; text-decoration: none; outline: 0; line-height: inherit; }
 a:hover { color: #c03d20; }
 
 /*=====================================================
@@ -463,8 +463,8 @@ img { -ms-interpolation-mode: bicubic; }
 .btn.default:active, .skiplink.default:active { background: #d8d8d8; }
 .btn.default:hover, .skiplink.default:hover { border: 1px solid #e5e5e5; }
 .btn.default a, .btn.default input, .btn.default button, .skiplink.default a, .skiplink.default input, .skiplink.default button { color: #555555; }
-.btn.info, .skiplink.info { background: #4a4d50; border: 1px solid #4a4d50; }
-.btn.info:hover, .skiplink.info:hover { background: #63676a; }
+.btn.info, .skiplink.info { background: #729D99; border: 1px solid #729D99; }
+.btn.info:hover, .skiplink.info:hover { background: #9FDAD4; }
 .btn.info:active, .skiplink.info:active { background: #313436; }
 .btn.danger, .skiplink.danger { background: #ca3838; border: 1px solid #ca3838; }
 .btn.danger:hover, .skiplink.danger:hover { background: #d56060; }
