@@ -6,6 +6,9 @@ However, this blank file is available if you prefer
 .align-right {
   text-align: right;
 }
+.float-right {
+  float: right;
+}
 .align-center {
   text-align: center;
 }
@@ -13,11 +16,17 @@ However, this blank file is available if you prefer
 .turquoise {
   background: #9FDAD4;
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 .turquoise h1, .turquoise .lead, .turquoise h3, .turquoise small {
   color: white;
   font-weight: 300;
+}
+.turquoise .lead {
+  font-weight: 500;
+}
+.turquoise small {
+  font-weight: 400;
 }
 
 .jumbotron {
@@ -25,6 +34,14 @@ However, this blank file is available if you prefer
 }
 .jumbotron .jumbo {
   margin-bottom: 1em;
+}
+
+.entypo {
+  margin-bottom: 1em;
+}
+
+hr.bottom {
+  margin-top: 6px;
 }
 
 .grey-pics img.grayscale {
@@ -52,6 +69,10 @@ svg image {
 
 svg image:hover {
     opacity: 0;
+}
+
+.originals {
+  margin: 3em 0;
 }
 
 .hidden {
