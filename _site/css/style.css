@@ -36,6 +36,11 @@ However, this blank file is available if you prefer
   margin-bottom: 1em;
 }
 
+.title {
+  margin-bottom: 2em;
+  border-bottom: 1px #eee solid
+}
+
 .entypo {
   margin-bottom: 1em;
 }
@@ -82,7 +87,7 @@ svg image:hover {
   display: block;
 }
 
-p.light-grey {
+h4.light-grey small {
   color: #ccc;
 }
 
