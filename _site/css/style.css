@@ -79,6 +79,14 @@ svg image:hover {
 .originals {
   margin: 3em 0;
 }
+.originals .turquoise {
+  padding: 2em;
+  color: white;
+}
+.originals .turquoise p {
+  font-weight: 600;
+  text-align: justify;
+}
 
 .hidden {
   display: none;
