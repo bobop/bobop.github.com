@@ -2,8 +2,8 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Bobop - Freelance Ruby on Rails developer based in Manchester</title>
-    <meta content="I'm a Freelance Ruby on Rails developer based in Manchester and am available for Hire. I use Agile, Behaviour Driven Development (BDD), Git, HTML5, CSS3, jQuery, MySQL, Postgresql, Heroku, Brightbox" name='description'>
+    <title>Bobop - Freelance Ruby on Rails developer based in Manchester, North West England</title>
+    <meta content="I'm a Freelance Ruby on Rails developer based in Manchester, North West England and am available for Hire. I use Agile, Behaviour Driven Development (BDD), Git, HTML5, CSS3, jQuery, MySQL, Postgresql, Heroku, Brightbox" name='description'>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='/img/b.png' rel='SHORTCUT ICON'>
     <!-- Bootstrap -->
@@ -20,7 +20,7 @@
         <div class="row">
           <div class="twelve columns">
             <div class="float-right">
-                <h3><div class="btn danger large"><a href="/contact.html">Contact Me</a></div></h3>
+                <h3><div class="btn danger large"><a href="/contact.html"><i class="icon-chat"></i> Contact Me</a></div></h3>
             </div>
           <h3 class="muted"><a href="/"><img src="/img/bobop_logo.jpg" width="200"></a></h3>
           </div>
@@ -41,13 +41,26 @@
   </div>
 </div>
 
+<div class="row navbar" id="nav1">
+  <a class="toggle" gumby-trigger="#nav1 > ul" href="#"><i class="icon-menu"></i></a>
+  <ul class="twelve columns">
+    <li><a href="#work"><i class="icon-star"></i> Work</a></li>
+    <li><a href="#testimonials"><i class="icon-thumbs-up"></i> Testimonials</a></li>
+    <li><a href="#experience"><i class="icon-code"></i> Experience</a></li>
+    <li><a href="#products"><i class="icon-rocket"></i> Products</a></li>
+    <li><a href="#thoughts"><i class="icon-megaphone"></i> Blog</a></li>
+  </ul>
+</div>
+
 <div class="row">
   <div class="twelve columns">
-    <div class="row">
-      <div class="centered four columns title align-center">
-        <h3>My Work</h3>
+    <a name="work">
+      <div class="row">
+        <div class="centered four columns title align-center">
+          <h3>My Work</h3>
+        </div>
       </div>
-    </div>
+    </a>
     <div class="row grey-pics">
       <div class="three columns image align-center">
         <img class="grayscale" src="/img/Hovis-logo.png"/>
@@ -79,21 +92,47 @@
 
     <div class="row originals">
       <div class="twelve columns">
-        <div class="row">
-          <div class="centered four columns title align-center">
-            <h3>My Experience</h3>
+        <a name="testimonials">
+          <div class="row">
+            <div class="centered four columns title align-center">
+              <h3>My Testimonials</h3>
+            </div>
           </div>
-        </div>
-        <div class="row turquoise-border">
-          <div class="nine columns">
+        </a>
+        <div class="row">
+          <div class="twelve columns testimonial">
+            <p class="float-left"><img src="/img/mughli.png"/><p>
+            <p>"Ben took over the completion of the Mughli website and with his <strong>clear communication</strong> and <strong>technical skills</strong> it was completed and launched <strong>quickly and efficiently</strong>."</p>
+            <p class="align-right author">- Liam Doorey (Flood)</p>
+          </div>
+          <!-- <div class="push_two five columns testimonial">
+            <p><img src="/img/TDB.png"/><p>
+            <p>"Ben’s consistent reliability and methodical expertise has meant we have been able to confidently build our app responding to customer feedback. Ben has developed our service through different business models, adding essential features to grow our customer base and income!"</p>
+            <p class="align-right author">- Phil Barley (TheatreDigsBooker.com)</p>
+          </div> -->
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="twelve columns">
+        <a name="experience">
+          <div class="row">
+            <div class="centered four columns title align-center">
+              <h3>My Experience</h3>
+            </div>
+          </div>
+        </a>
+        <div class="row">
+          <div class="eight columns">
             <p>Developing with Ruby and Rails <strong>since 2005</strong> I have built a variety of live websites and web apps for <strong>Household Brands</strong>, <strong>Digital Agencies</strong> and <strong>Startups</strong> using Ruby and Rails. I use <strong>Agile</strong> processes, <strong>Behaviour/Test Driven Development</strong>, Git and <a href="http://heroku.com/" title="Heroku">Heroku</a> or <a href="http://brightbox.co.uk/" title="Brightbox">Brightbox</a> to deliver stable, high-quality, maintainable code and big smiles!</p>
             <p>I'm an active member of a number of local groups. I regularly attend <a href="http://nwrug.org/" title="NWRUG">North West Ruby User Group</a> and co-started <a href="http://bootstrapbusinessclub.co.uk/" title="BootStrap Business Club">Manchester's BootStrap Business Club</a>, a monthly gathering of entrepreneurs to discuss building sustainable businesses and projects.</p>
-            <div class="medium primary btn jumbo"><a href="/contact.html">Let's Talk</a></div>
+            <div class="medium primary btn jumbo"><a href="/contact.html"><i class="icon-chat"></i> Let's Talk</a></div>
           </div>
-          <div class="three columns align-right">
+          <div class="push_one three columns align-center turquoise">
             <ul>
               <li>Ruby</li>
               <li>Rails</li>
+              <li>MySQL/PostgreSQL</li>
               <li>HTML5</li>
               <li>CSS3</li>
               <li>Javascript/jQuery</li>
@@ -110,11 +149,13 @@
 
     <div class="row originals">
       <div class="twelve columns">
-        <div class="row">
-          <div class="centered four columns title align-center">
-            <h3>My Products</h3>
+        <a name="products">
+          <div class="row">
+            <div class="centered four columns title align-center">
+              <h3>My Products</h3>
+            </div>
           </div>
-        </div>
+        </a>
         <div class="row">
           <div class="four columns image photo align-center">
             <a href="http://www.borrownote.com/"><img class="grayscale" src="/img/borrownote.png"/></a>

@@ -9,6 +9,9 @@ However, this blank file is available if you prefer
 .float-right {
   float: right;
 }
+.float-left {
+  float: left;
+}
 .align-center {
   text-align: center;
 }
@@ -16,7 +19,7 @@ However, this blank file is available if you prefer
 .turquoise {
   background: #9FDAD4;
   width: 100%;
-  margin-bottom: 30px;
+  /*margin-bottom: 30px;*/
 }
 .turquoise h1, .turquoise .lead, .turquoise h3, .turquoise small {
   color: white;
@@ -28,6 +31,7 @@ However, this blank file is available if you prefer
 .turquoise small {
   font-weight: 400;
 }
+@media only screen and (max-width: 767px) { .turquoise {margin-bottom: 30px;} }
 
 .turquoise-border {
   border: 2px solid #9FDAD4;
@@ -35,6 +39,7 @@ However, this blank file is available if you prefer
   margin-bottom: 30px;
   padding: 2em;
 }
+@media only screen and (max-width: 767px) { .turquoise-border { padding: 2em;} }
 
 .jumbotron {
   text-align: center;
@@ -42,6 +47,11 @@ However, this blank file is available if you prefer
 .jumbotron .jumbo {
   margin-bottom: 1em;
 }
+
+/*.navbar {
+  margin-bottom: 30px;
+  background: 
+}*/
 
 .title {
   margin-bottom: 2em;
@@ -87,11 +97,11 @@ svg image:hover {
   margin: 3em 0;
 }
 .originals .turquoise {
-  padding: 2em;
+  padding: 1em 0;
   color: white;
 }
-.originals .turquoise p {
-  font-weight: 600;
+.originals p {
+  /*font-weight: 600;*/
   text-align: justify;
 }
 
@@ -121,9 +131,25 @@ h4.light-grey small {
   margin-bottom: 1em;
   padding: 0.5em;
 }
+.address.top {
+  margin-top: 1em;
+}
 .address p {
   margin-bottom: 0px;
 }
 .address a {
   color: #555;
+}
+
+.quotemark {
+  font-size: 34px;
+}
+
+.author {
+  font-style: italic;
+  color: #999;
+}
+
+.testimonial {
+  margin-bottom: 30px;
 }
