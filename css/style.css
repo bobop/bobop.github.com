@@ -29,6 +29,13 @@ However, this blank file is available if you prefer
   font-weight: 400;
 }
 
+.turquoise-border {
+  border: 2px solid #9FDAD4;
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 2em;
+}
+
 .jumbotron {
   text-align: center;
 }
